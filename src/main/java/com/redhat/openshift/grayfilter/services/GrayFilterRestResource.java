@@ -51,7 +51,7 @@ public class GrayFilterRestResource {
 			return encodeToString(toBufferedImage(grayImage), "PNG");
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.err.println(e);
 		}
 
 		return null;
