@@ -6,7 +6,7 @@
 	<groupId>com.redhat</groupId>
 	<artifactId>openshift-gray-flter</artifactId>
 	<version>0.1.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>gray-filter</name>
 	<description>Gray Filter</description>
@@ -55,6 +55,12 @@
 	<!-- Package as an executable jar -->
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
