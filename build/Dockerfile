@@ -1,4 +1,4 @@
-FROM nimmis/java-centos
+FROM kurron/docker-oracle-jdk-8
 VOLUME /tmp
 ADD openshift-gray-flter-0.1.0.jar openshift-gray-flter-0.1.0.jar
 RUN bash -c 'touch /openshift-gray-flter-0.1.0.jar'
