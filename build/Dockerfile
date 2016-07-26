@@ -1,4 +1,4 @@
-FROM nuagebec/alpine-jdk
+FROM frolvlad/alpine-oraclejdk8:slim
 VOLUME /tmp
 ADD openshift-gray-flter-0.1.0.jar openshift-gray-flter-0.1.0.jar
 RUN bash -c 'touch /openshift-gray-flter-0.1.0.jar'
