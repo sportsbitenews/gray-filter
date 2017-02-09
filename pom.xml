@@ -6,7 +6,7 @@
 	<groupId>com.redhat</groupId>
 	<artifactId>openshift-gray-flter</artifactId>
 	<version>0.1.0</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>gray-filter</name>
 	<description>Gray Filter</description>
